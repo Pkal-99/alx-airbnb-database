@@ -61,9 +61,7 @@
 
 **All tables satisfy 3NF.**
 
----
-
-## Example of Avoided Redundancy
+## Example Redundancy
 
 - **Without normalization**:  
   In `property`, if we stored `host_name` and `host_email`, updating host info would require changes across all properties.

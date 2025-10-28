@@ -7,7 +7,7 @@
 - No repeating groups or arrays.
 - Each cell contains **atomic values** (no multiple values in one field).
 
-# Application
+### Application
 
 - `user` table → each user identified by `user_id` (UUID). No repeating groups (e.g., phone numbers stored separately if multiple are needed).
 - `property` table → each property has `property_id`. Attributes like `name`, `description`, `location`, `price_per_night` are atomic.
@@ -43,7 +43,7 @@
 - Must already be in 2NF.
 - No transitive dependency (non-key attributes must not depend on other non-key attributes).
 
-* Application
+### Application
 
 - `user`:
   - `email` is unique, only depends on `user_id`.

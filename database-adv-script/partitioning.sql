@@ -1,0 +1,8 @@
+-- Partition the Booking table by start_date (e.g., yearly)
+ALTER TABLE bookings
+PARTITION BY RANGE (YEAR(start_date)) (
+  PARTITION p2019 VALUES LESS THAN (2020),
+  PARTITION p2020 VALUES LESS THAN (2021),
+  PARTITION p2021 VALUES LESS THAN (2022),
+  PARTITION pmax VALUES LESS THAN MAXVALUE
+);

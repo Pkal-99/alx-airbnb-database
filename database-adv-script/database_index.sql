@@ -6,3 +6,9 @@ CREATE INDEX idx_review_property ON reviews(property_id);
 -- Index for frequent filters or sorting
 CREATE INDEX idx_property_location ON properties(location);
 CREATE INDEX idx_user_email ON users(email);
+
+EXPLAIN ANALYZE
+SELECT property_name, price
+FROM Property
+WHERE city = 'London'
+ORDER BY price DESC;

@@ -11,4 +11,4 @@ Using `EXPLAIN`, I observed full table scans on `bookings` and `payments`.
 
 ### Results
 
-Query time reduced from 2.4s → 0.3s
+Query time reduced from 2.6s → 0.3s
